@@ -4,6 +4,7 @@ import Badge from '../components/Badge.astro';
 import Experiencie from '../components/Experiencie.astro';
 import Container from '../components/Container.astro';
 import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro';
 import Footer from '../components/Footer.astro';
 
 import SocialPill from "../components/SocialPill.astro"
@@ -19,7 +20,7 @@ title="Portafolio de Luis - Desarrollador y Programador Web."
 description="Contrata a Luis para crear o diseñar tu página Web. desarrollador y diseñador web."
 >
 <main>
-    <Container class="py-44 pb-30">
+    <Container class="py-40 ">
         <h1 class=" text-5xl font-bold flex justify-start flex-row items-center gap-x-4">Hey, soy luis
             <a href="https://linkedin.com/in/luis-narvaez-/" target="_blank" rel="noopener" class="flex items-center" >
                 <Badge>Disponible para Proyectos</Badge>
@@ -43,7 +44,8 @@ description="Contrata a Luis para crear o diseñar tu página Web. desarrollador
         </SocialPill>
        </nav>
     </Container>
-    <Container id="experience">
+
+    <Container class=" " id="experience">
         <h2 class="flex gap-x-4 items-center text-2xl font-semibold mb-6" >
             <BriefCase class="size-7" />
             Experiencia</h2>
@@ -55,6 +57,12 @@ description="Contrata a Luis para crear o diseñar tu página Web. desarrollador
         <h2 class="flex gap-x-4 items-center text-2xl font-semibold mb-6" >
             <CodeIcon class="size-7" />Proyectos  </h2>
             <Projects />
+    </Container>
+
+    <Container id="about">
+        <h2 class="flex gap-x-4 items-center text-2xl font-semibold mb-6" >
+            <CodeIcon class="size-7" />Yo  </h2>
+            <AboutMe />
     </Container>
     <Footer />
 
