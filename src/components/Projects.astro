@@ -1,14 +1,16 @@
 ---
 import GithubIcon  from "../components/icons/GithubIcon.astro"
 import Link from "./icons/Link.astro"
-import {TAGS} from "./Tags.astro"
 import LinkButton from "./LinkButton.astro"
+import {TAGS} from "./Tags.astro"
 
+const {React, ReactN, StyledComponents, Node,Expo, AWS
+,Axios, Docker, Mongo, Typescript, Angular,
+   ReactQ,TAILWIND,Redux, Supabase,PostSql, Vite,
+    Express, WP, Cpanel, Figma} = TAGS
 
-const {REACT,REACTN, StyledComponents, Node,Expo, AWS,Axios, Docker, Mongo, Typescript, Angular,
-   ReactQ,TAILWIND,Redux, Supabase,PostSql, Vite, Express, WP, Cpanel, Figma} = TAGS
-
-const PROJECTS = [
+   
+const DATA = [
   {
     title: "The-wild-oasis ",
     description:
@@ -16,7 +18,7 @@ const PROJECTS = [
     link: "https://the-wild-oasis-luisnv.netlify.app/login",
     github: "https://github.com/luisnarv/The-wild-oasis",
     image: "/Projects/the-wild-oasis.webp",
-    tags: [REACT, StyledComponents, ReactQ, Supabase, Vite],
+    tags: [React, StyledComponents, ReactQ, Supabase, Vite],
   },
   {
     title: "Fast-React-Pizza",
@@ -25,7 +27,7 @@ const PROJECTS = [
     link: "https://luisnv-fast-react-pizza.netlify.app/",
     github:"https://github.com/luisnarv/React2023/tree/main/15-fast-react-pizza",
     image: "/Projects/Fast-React-Pizza.webp",
-    tags: [REACT, TAILWIND, Redux, Vite],
+    tags: [React, TAILWIND, Redux, Vite],
   },
   {
     title: "San Francisco - Mejora de diseño Web",
@@ -41,7 +43,7 @@ const PROJECTS = [
       "Esta aplicación móvil, desarrollada con React Native, incorpora la reconocida metodología de tiempo Pomodoro. Optimiza tu productividad y concentración con una interfaz intuitiva y funcional, diseñada para adaptarse a tus necesidades.",
     github:"https://github.com/luisnarv/Native/tree/main/Pomodoro-App",
     image: "/Projects/Pomodoro.webp",
-    tags: [REACTN, Expo],
+    tags: [ReactN, Expo],
   },
   {
     title: "Medilab Manager",
@@ -50,7 +52,7 @@ const PROJECTS = [
     link: "https://medilab-manager.vercel.app/",
     github:"https://github.com/NazarenoCarlesso/medilab-manager?tab=readme-ov-file",
     image: "/Projects/Medilab-Manager.webp",
-    tags: [REACT, PostSql, Node, Redux, Express],
+    tags: [React, PostSql, Node, Redux, Express],
   },
   {
     title: "Micro servicios - Start Wars",
@@ -58,7 +60,7 @@ const PROJECTS = [
       "Nuestro enfoque estaba en facilitar el acceso de los pacientes a servicios médicos desde la comodidad de sus hogares, asegurando una entrega eficiente de resultados de exámenes. Con un diseño limpio y minimalista, nuestra meta era ofrecer una experiencia de usuario intuitiva y atractiva, con el objetivo de mejorar realmente la calidad de vida de los pacientes. ¿Listo para explorar cómo revolucionamos la atención médica?",
     github:"https://github.com/luisnarv/microservicios/tree/main",
     image: "/Projects/Medilab-Manager.webp",
-    tags: [Angular, AWS, Docker,Axios, Express, Express, Mongo, Typescript],
+    tags: [Angular, AWS, Docker,Axios, Express, Mongo, Typescript],
   },
   {
     title: "Netflix-copia",
@@ -66,14 +68,14 @@ const PROJECTS = [
       "Nuestro enfoque estaba en facilitar el acceso de los pacientes a servicios médicos desde la comodidad de sus hogares, asegurando una entrega eficiente de resultados de exámenes. Con un diseño limpio y minimalista, nuestra meta era ofrecer una experiencia de usuario intuitiva y atractiva, con el objetivo de mejorar realmente la calidad de vida de los pacientes. ¿Listo para explorar cómo revolucionamos la atención médica?",
     github:"https://github.com/luisnarv/netfixcop/tree/main/NetflixCop",
     image: "/Projects/NetflixCo.webp",
-    tags: [Vite, REACT],
+    tags: [Vite, React],
   },
 ]
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    DATA.map(({ image, title, description, tags=[], link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
