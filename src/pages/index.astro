@@ -1,16 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
 import Experiencie from '../components/Experiencie.astro';
 import Container from '../components/Container.astro';
 import Projects from '../components/Projects.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Footer from '../components/Footer.astro';
+import Me from "../components/Me.astro";
 
-import SocialPill from "../components/SocialPill.astro"
-import LkdInIcon from "../components/icons/LkdInIcon.astro"
-import GithubIcon from "../components/icons/GithubIcon.astro"
-import MailIcon from "../components/icons/MailIcon.astro"
 import BriefCase from "../components/icons/BriefCase.astro"
 import CodeIcon from "../components/icons/CodeIcon.astro"
 ---
@@ -21,28 +17,7 @@ description="Contrata a Luis para crear o diseñar tu página Web. desarrollador
 >
 <main>
     <Container class="py-40 ">
-        <h1 class=" text-5xl font-bold flex justify-start flex-row items-center gap-x-4">Hey, soy luis
-            <a href="https://linkedin.com/in/luis-narvaez-/" target="_blank" rel="noopener" class="flex items-center" >
-                <Badge>Disponible para Proyectos</Badge>
-                </a> 
-            </h1>
-        <h2 class="text-2xl">
-        <span>+1 año de experiencia.</span>
-          <span class="text-blue-500/90">Desarrollador y Diseñador web. </span> <br>
-          <span class="text-green-700/70"> De Barranquilla, Colombia. </span>
-          <span class=" opacity-65"> Especializado en FrontEnd. </span>
-        </h2>
-       <nav class="flex gap-4 py-2">
-        <SocialPill href="https://linkedin.com/in/luis-narvaez-/">
-            <LkdInIcon class="size-6" /> LinkedIn 
-        </SocialPill>
-        <SocialPill href="https://github.com/luisnarv">
-            <GithubIcon class="size-6" /> Github
-        </SocialPill>
-        <SocialPill href="mailto:luiskendornarvaez@gmail.com">
-            <MailIcon class="size-6" /> luiskendornarvaez@gmail.com
-        </SocialPill>
-       </nav>
+            <Me />
     </Container>
 
     <Container id="experience">
