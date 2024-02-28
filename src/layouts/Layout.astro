@@ -21,17 +21,19 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body >
-		<div class="inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-			<div class="bg-[radial-gradient(circle_800px_at_100%_200px,#4011be66,#fdfdfd30)]">
-				<Header />
-				<slot />
-			</div>
+				 <Header />
+				<slot /> 
 		</div>
 	</body>
 </html>
 <style is:global>
 	:root {
 	color-scheme: light dark;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
 	}
 	html {
 		font-family: "Clear sans", system-ui, sans-serif;
@@ -40,15 +42,17 @@ const { title, description } = Astro.props;
 	body{
 		display: flex;
 		flex-direction: column;
-	
 		justify-content: center;
-	min-height: 100vh;
+		align-items: center;
+		min-height: 100vh;
 	}
+	
 
 	@media (prefers-reduced-motion: reduce){
 		html{
 			scroll-behavior: auto;
 		}
 	}
+	
 
 </style>
