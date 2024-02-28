@@ -20,12 +20,12 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<!-- <body >    background-image: radial-gradient(circle at 100% ,#d5c5fff2,transparent,#d5c5ff12,#d5c5ff00); -->
+	<body >  
 		<Header />
-		<!-- <div class=" w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+	 <div class=" w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"> 
 			
-		</div> -->
-		<slot /> 
+		 <slot /> 
+	</div>
 	</body>
 </html>
 <style is:global>
