@@ -86,7 +86,7 @@ const DATA = [
               <span
                 class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
               >
-                <tag.icon class={tag.name.length < 1 ? "size-9":`size-6`} />
+               {tag.icon && <tag.icon class={tag.name.length < 1 ? "size-9":`size-6`} />}
                 {tag.name}
               </span>
             </li>

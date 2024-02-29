@@ -20,14 +20,11 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class=" w-full bg-[linear-gradient(to_right,#d5d5d55e_1px,transparent_1px),linear-gradient(to_bottom,#d5d5d55e_1px,transparent_1px)] bg-[size:6rem_4rem] "> 				
+	<body class=" w-full bg-[linear-gradient(to_right,#d5d5d55e_1px,transparent_1px),linear-gradient(to_bottom,#d5d5d55e_1px,transparent_1px)] bg-[size:6rem_4rem]"> 				
 		<Header />
-			<div class="w-full bg-gradient-to-r from-amber-50/30 from-10% via-cyan-50/30 to-red-50/30 to-80% " >
-
-				<slot />
+		<div class="w-full bg-gradient-to-r from-amber-50/30 from-10% via-cyan-50/30 to-red-50/30 to-80% dark:[  bg-gradient-to-l from-cyan-800/80 via-sky-900/80 to-slate-800/80 ]">
+			<slot  />
 			</div>
-
-	
 	</body>
 </html>
 <style is:global>
@@ -60,7 +57,31 @@ const { title, description } = Astro.props;
 		}
 	}
 	
-
+	@media (prefers-color-scheme: dark) {
+		h2{color: white;}
+        @keyframes blur {
+          from {
+            border: 0px;
+          }
+          to {
+            box-shadow:
+              0px 5px 50px -5px rgba(0, 0, 0, 0.1),
+              0px 0px 0 1px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border-width: 1px;
+            border-color: rgba(0, 0, 0);
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 9999px;
+          }
+        }}
 	
 
 </style>

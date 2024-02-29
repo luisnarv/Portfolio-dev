@@ -6,22 +6,23 @@ import MailIcon from "../components/icons/MailIcon.astro"
 
 ---
 
-<h1 class=" text-5xl font-bold flex justify-start flex-row items-center">Hey, soy luis</h1>
+<h1 class=" text-5xl font-bold flex justify-start flex-row items-center dark:text-teal-50">Hey, soy luis</h1>
 
 <p class="text-3xl m-1">
-    <strong class=" opacity-65">     +1 año de experiencia. </strong>
-      <strong class="text-blue-500/90">Desarrollador y Diseñador web. </strong>
-      <strong class="text-green-700/70"> De Barranquilla, Colombia. </strong>
-      <strong class=" opacity-65"> Especializado en FrontEnd. </strong>
-    </p>
-   <nav class="flex flex-wrap gap-2 text-3sm ">
-    <SocialPill href="https://linkedin.com/in/luis-narvaez-/">
+    <strong class=" opacity-65 dark:text-slate-200 "> +1 año de experiencia. </strong>
+    <strong class="text-blue-500/90 dark:text-cyan-400">Desarrollador y Diseñador web. </strong>
+    <strong class="text-green-700/70 dark:text-green-400"> De Barranquilla, Colombia. </strong>
+    <strong class=" opacity-65 dark:text-sky-400/80"> Especializado en FrontEnd. </strong>
+</p>
+<nav class="flex flex-wrap gap-2 text-3sm ">
+    <SocialPill  href="https://linkedin.com/in/luis-narvaez-/">
         <LkdInIcon class="size-6" /> LinkedIn 
     </SocialPill>
     <SocialPill href="https://github.com/luisnarv">
         <GithubIcon class="size-6" /> Github
     </SocialPill>
     <SocialPill href="mailto:luiskendornarvaez@gmail.com">
-        <MailIcon class="size-6" /> luiskendornarvaez@gmail.com
+        <MailIcon class="size-6 text-slate-50 dark:fill-white "   /> luiskendornarvaez@gmail.com
     </SocialPill>
-   </nav>
+</nav>
+
